@@ -180,14 +180,10 @@ def run_training_loop(params):
             # HINT3: return corresponding data points from each array (i.e., not different indices from each array)
             # for imitation learning, we only need observations and actions.
             # Sampling data from replay buffer for training
-            indices = np.random.permutation(len(replay_buffer))[
-                :params['train_batch_size']]
-            ob_batch = torch.from_numpy(
-                replay_buffer.obs[indices]).to(ptu.device)
-            ac_batch = torch.from_numpy(
-                replay_buffer.acs[indices]).to(ptu.device)
-#the above code is trying to get the random samples from the replay buffer 
-            # use the sampled data to train an agent
+
+
+
+            
             train_log = actor.update(ob_batch, ac_batch)
             training_logs.append(train_log)
 

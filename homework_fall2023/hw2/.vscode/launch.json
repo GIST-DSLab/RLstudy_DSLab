@@ -1,0 +1,55 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: half_cheetah",
+            "type": "python",
+            "request": "launch",
+            "program": "C:\\LSP\\rl-study\\RLstudy_DSLab\\homework_fall2023\\hw2\\cs285\\scripts\\run_hw2.py",
+            "args": [
+                "--env_name",
+                "HalfCheetah-v4",
+                "-n",
+                "100",
+                "-b",
+                "5000",
+                "-rtg",
+                "--discount",
+                "0.95",
+                "-lr",
+                "0.01",
+                "--exp_name",
+                "cheetah",
+                "--video_log_freq",
+                "9"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: cart_pole",
+            "type": "python",
+            "request": "launch",
+            "program": "C:\\LSP\\rl-study\\RLstudy_DSLab\\homework_fall2023\\hw2\\cs285\\scripts\\run_hw2.py",
+            "args": [
+                "--env_name",
+                "CartPole-v0",
+                "-n",
+                "100",
+                "-b",
+                "4000",
+                "--exp_name",
+                "cartpole_lb_rtg_na",
+                "-rtg",
+                "-na",
+                "--video_log_freq",
+                "9"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
